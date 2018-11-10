@@ -1,0 +1,279 @@
+body {
+	font-family: Verdana, sans-serif;
+	font-size: 9pt;
+	color: #333;
+}
+.print-body {
+	margin: 30px;
+}
+
+h1 {
+	font-family: Arial, sans-serif;
+	text-transform: uppercase;
+	font-size: 2em;
+	margin: 14px 0;
+}
+table {
+	border-collapse: collapse;
+	text-align: left;
+	border: 1px solid;
+	width: 100%;
+	margin-bottom: 10pt;
+	font-size: 11px;
+}
+th,td {
+	padding: 2pt 10pt;
+	vertical-align: top;
+}
+.first-child th,
+.first-child td {
+	padding-top: 10pt
+}
+.last-child th,
+.last-child td {
+	padding-bottom: 10pt
+}
+.receipt-details th {
+	font-weight: normal;
+	width: 150pt;
+}
+.receipt-details td {
+	font-weight: bold;
+}
+.receipt-booking th {
+	font-weight: normal;
+	width: 150pt;
+}
+.receipt-booking .total th {
+	font-weight: bold;
+	text-transform: uppercase;
+	border-top: 1px dotted;
+	padding: 10pt;
+}
+.receipt-booking .total td {
+	border-top: 1px dotted;
+	padding: 10pt;
+}
+.legal {
+	clear: both;
+	font-size: 8pt;
+	margin-top: 10pt;
+}
+ul {
+	margin: 0;
+}
+
+/* General styles for printing */
+
+.header h1 img,
+.header-right,
+.dashboard-tab ul li,
+a,
+.right-column,
+.js-target,
+.info-box,
+.add-passenger fieldset {
+	display: none !important;
+}
+
+/* a:after { content:" [" attr(href) "] "; } */
+
+.dashboard-tab ul .active,
+.dashboard-tab ul .active span {
+	font-weight: bold;
+	font-size: 14px;
+	display: block !important;
+	padding: 0;
+	margin: 10px 0;
+	color: #333 !important;
+	height: 25px;
+}
+
+.secundary-tab li {
+	list-style: none;
+}
+
+.secundary-tab li.active a {
+	font-weight: bold;
+	font-size: 14px;
+	display: block !important;
+	padding: 0;
+	margin: 10px 0 0;
+	color: #333 !important;
+	height: 25px;
+	text-decoration: none;
+}
+
+.flight-details-overview,
+.booking-info,
+.booking-info-wide,
+.pass-details,
+.flight-preferences-table,
+.ancillary-product-overview {
+	border-width: 1px 0 1px 0 !important;
+	border-color: #666 !important;
+	border-style: solid !important;
+}
+
+.receipt-details .total td
+ {
+ 	font-weight: bold;
+	border-top: 1px dotted;
+	padding: 10pt;
+}
+
+.receipt-details .total th
+ {
+	font-weight: bold;
+	text-transform: uppercase;
+	border-top: 1px dotted;
+	padding: 10pt;
+}
+
+.receipt-details .passengers td
+ {
+	border-top: 1px solid;
+}
+
+
+.header-blue {
+	font-size: 14px;
+	margin-bottom: 30px;
+}
+
+.js-target-open {
+	display: block !important;
+}
+
+.error-box {
+	border: 1px solid #000;
+	margin-bottom: 20px;
+}
+
+/* CSS for the Print Example Page */
+
+.print-page {
+	margin: 30px;
+	line-height: 16px;
+}
+
+.print-page h1 {
+	text-transform: none;
+	color: #000;
+}
+
+.print-page h1.print-booking-info{
+	margin-bottom: 15px;
+}
+
+.print-page table {
+	page-break-inside: avoid !important;
+	page-break-before: auto;
+}
+
+.print-page .print-header {
+	width: 100%;
+	border-bottom: 3px solid #b2b2b2;
+	height: 68px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.print-page h3 {
+	color: #333;
+	border-bottom: 3px solid #b2b2b2;
+	padding-bottom: 5px;
+}
+
+.print-page h3 img {
+	position: relative;
+	top: 11px;
+}
+
+.print-page h3 span {
+	left: 37px;
+	position: relative;
+}
+
+.print-page img.print-logo {
+	position: relative;
+	top: auto;
+}
+
+.print-page img.first-img {
+	position: relative;
+	top: auto;
+}
+
+.print-page .flight-details-overview {
+	border: none !important;
+}
+
+.print-page .flight-details-overview td,
+.print-page .flight-details-overview th,
+.print-page .luggage td,
+.print-page .luggage th,
+.print-page .ancillary-product-overview td,
+.print-page .ancillary-product-overview th {
+	width: 25%;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.print-page .solid-border-bottom {
+	border-bottom: 1px solid #b2b2b2 !important;
+}
+
+.print-page .dotted-border-bottom {
+	border-bottom: 1px dotted #b2b2b2 !important;
+}
+
+.print-page table {
+	border: none !important;
+}
+
+.print-page .passengers th,
+.print-page .passengers td,
+.print-page .seating-preferences-table th,
+.print-page .seating-preferences-table td,
+.print-page .destination th,
+.print-page .destination td,
+.print-page .booking-info th,
+.print-page .booking-info td{
+	width: 33%;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.print-page .passengers th,
+.print-page .luggage th,
+.print-page .destination th {
+	border-bottom: 3px solid #b2b2b2;
+}
+
+.print-page .luggage,
+.print-page .destination,
+.print-page .booking-info {
+	border-bottom: 1px dotted #b2b2b2 !important;
+}
+
+.print-page .border td {
+	border-bottom: 1px solid #b2b2b2;
+	padding-bottom: 15px;
+}
+
+.print-page .spacer td,
+.print-page .spacer th {
+	padding-top: 15px;
+}
+
+.print-page .booking-info {
+	border-top: 3px solid #b2b2b2 !important;
+}
+
+.print-page .booking-info strong {
+	font-size: 13px;
+}
+#singlepagebreak {
+	page-break-before: always;
+}
